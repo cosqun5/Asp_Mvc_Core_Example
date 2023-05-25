@@ -1,0 +1,179 @@
+﻿@model List<Post>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- START SECTION -->
+<div class="section hero text-center background-dark dark-bg">
+    <div class="background-image" style="background: url(images/hero.jpg) no-repeat center center; background-size: cover; opacity: .2;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Indigo Template</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ullam consequatur repellat debitis maxime.</p>
+                <ul class="list-inline">
+                    <li><a href="#" title="Learn More" class="btn btn-md btn-info">Learn More</a></li>
+                    <li><a href="#" title="Learn More" class="btn btn-md btn-primary">Download Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/.section -->
+<!-- START SECTION -->
+<div class="section background-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">Laudantium ullam consequatur repellat debitis maxime.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="service-block text-center">
+                    <i class="fa fa-rocket"></i>
+                    <h3>Web Design</h3>
+                    <p>Sed tempus feugiat adipiscing nisl cursus aliquam dolore.</p>
+                    <a href="#" title="Learn More" class="btn btn-sm btn-primary">Learn More</a>
+                </div><!--/.service-block-->
+            </div>
+            <div class="col-md-4">
+                <div class="service-block text-center">
+                    <i class="fa fa-rocket"></i>
+                    <h3>WordPress Development</h3>
+                    <p>Sed tempus feugiat adipiscing nisl cursus aliquam dolore.</p>
+                    <a href="#" title="Learn More" class="btn btn-sm btn-primary">Learn More</a>
+                </div><!--/.service-block-->
+            </div>
+            <div class="col-md-4">
+                <div class="service-block text-center">
+                    <i class="fa fa-rocket"></i>
+                    <h3>Awesome Service Title</h3>
+                    <p>Sed tempus feugiat adipiscing nisl cursus aliquam dolore.</p>
+                    <a href="#" title="Learn More" class="btn btn-sm btn-primary">Learn More</a>
+                </div><!--/.service-block-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--/.section -->
+<!-- START SECTION -->
+<div class="section hero text-center background-primary dark-bg">
+    <div class="background-image" style="background: url(images/hero.jpg) no-repeat fixed center center; background-size: cover; opacity: .2;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-uppercase letter-spacing-md font-weight-lg margin-zero">Laudantium ullam consequatur repellat debitis maxime.</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/.section -->
+<!-- START SECTION -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="section-title">Recent Posts</h2>
+                <p class="section-description">Laudantium ullam consequatur repellat debitis maxime.</p>
+            </div>
+            @foreach (Post item in Model)
+            {
+                
+            <div class="col-md-4">
+                <div class="entry">
+                    <div class="entry-media">
+                        <a href="#" title="">
+                            <span class="absolute-wrapper"></span>
+                            <img src="~/assets/images/@item.Path" alt="" class="img-responsive" />
+                        </a>
+                    </div>
+                    <h3 class="entry-title"><a href="#" title="Yelp Is Awful for Everyone Involved">@item.Title</a></h3>
+                    <p>@item.Description</p>
+                    <a href="#" title="Learn More" class="btn read-more btn-sm btn-primary">Learn More</a>
+                </div><!--/.entry-->
+            </div>
+            }
+@*            <div class="col-md-4">
+                <div class="entry">
+                    <div class="entry-media">
+                        <a href="#" title="">
+                            <span class="absolute-wrapper"></span>
+                            <img src="~/assets/images/blog2.jpg" alt="" class="img-responsive" />
+                        </a>
+                    </div>
+                    <h3 class="entry-title"><a href="#" title="2 Best Sites to Build Your Own Website">2 Best Sites to Build Your Own Website</a></h3>
+                    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                    <a href="#" title="Learn More" class="btn read-more btn-sm btn-primary">Learn More</a>
+                </div><!--/.entry-->
+            </div>
+            <div class="col-md-4">
+                <div class="entry">
+                    <div class="entry-media">
+                        <a href="#" title="">
+                            <span class="absolute-wrapper"></span>
+                            <img src="~/assets/images/blog3.jpg" alt="" class="img-responsive" />
+                        </a>
+                    </div>
+                    <h3 class="entry-title"><a href="#" title="2 Best Sites to Build Your Own Website">2 Best Sites to Build Your Own Website</a></h3>
+                    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                    <a href="#" title="Learn More" class="btn read-more btn-sm btn-primary">Learn More</a>
+                </div><!--/.entry-->
+            </div>*@
+        </div><!--/.row-->
+    </div><!--/.container-->
+</div>
+<!--/.section -->
+<!-- START SECTION -->
+<div class="section hero text-center background-dark dark-bg">
+    <div class="background-image" style="background: url(images/hero.jpg) no-repeat fixed center center; background-size: cover; opacity: .2;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-uppercase letter-spacing-md font-weight-lg margin-zero">Laudantium ullam consequatur repellat debitis maxime.</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/.section -->
+<!-- START SECTION -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">Laudantium ullam consequatur repellat debitis maxime.</p>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <form id="contact" method="post" class="form" role="form">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div><!--/.row-->
+    </div><!--/.container-->
+</div>
+<!--/.section -->
+<!-- START SECTION -->
+<div class="section hero text-center background-light">
+    <div class="background-image" style="background: url(images/hero.jpg) no-repeat fixed center center; background-size: cover; opacity: .2;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-uppercase letter-spacing-md font-weight-lg margin-zero">Laudantium ullam consequatur repellat debitis maxime.</h3>
+            </div>
+        </div>
+    </div>
+</div>

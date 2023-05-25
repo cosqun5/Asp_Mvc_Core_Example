@@ -1,0 +1,33 @@
+﻿@using Bilet1.Models;
+@model CreatePostVM;
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_Layout";
+}
+
+<div class="card-body">
+    <h4 class="card-title">Create Page</h4>
+    <div asp-validation-summary="ModelOnly"></div>
+    <form class="forms-sample" method="post"  enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="Title" ></label>
+            <input asp-for="Title" class="form-control" placeholder="Name">
+            <span class="text text-danger" asp-validation-for="Title"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" class="form-control" placeholder="Name">
+            <span class="text text-danger" asp-validation-for="Description"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Photo"></label>
+            <input asp-for="Photo" class="form-control" placeholder="Name">
+            <span class="text text-danger" asp-validation-for="Photo"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mr-2">Create</button>
+        <a href="~/Admin/Posts/Index/" class="btn btn-danger">Go back</a>
+    </form>
+</div>
+
+
