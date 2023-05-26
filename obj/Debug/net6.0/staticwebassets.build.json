@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ikRWqG9XOELDkwCJpXZFaeRaPE3cD6bFWeTg4s1L0TI=",
+  "Hash": "z9EoDKw/3WDXWJ+Pm0CpAjwLE2qZRoZzoUtLkE8v+lA=",
   "Source": "Bilet1",
   "BasePath": "_content/Bilet1",
   "Mode": "Default",
@@ -29937,23 +29937,6 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\Desktop\\Bilet1\\wwwroot\\assets\\images\\12dedccc-cb18-48ba-be0e-7f9c587fe390IMG-20230429-WA0033.jpg",
-      "SourceId": "Bilet1",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Bilet1\\wwwroot\\",
-      "BasePath": "_content/Bilet1",
-      "RelativePath": "assets/images/12dedccc-cb18-48ba-be0e-7f9c587fe390IMG-20230429-WA0033.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\12dedccc-cb18-48ba-be0e-7f9c587fe390IMG-20230429-WA0033.jpg"
-    },
-    {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Bilet1\\wwwroot\\assets\\images\\2f8dcb2f-cab1-45bb-b814-bdac981f3ccbIMG-20230429-WA0033.jpg",
       "SourceId": "Bilet1",
       "SourceType": "Discovered",
@@ -30020,6 +30003,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\blog3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Bilet1\\wwwroot\\assets\\images\\f6f3fcb9-c89c-4d08-87a9-6a3cc38ecbe0IMG-20230429-WA0033.jpg",
+      "SourceId": "Bilet1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Bilet1\\wwwroot\\",
+      "BasePath": "_content/Bilet1",
+      "RelativePath": "assets/images/f6f3fcb9-c89c-4d08-87a9-6a3cc38ecbe0IMG-20230429-WA0033.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\f6f3fcb9-c89c-4d08-87a9-6a3cc38ecbe0IMG-20230429-WA0033.jpg"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Bilet1\\wwwroot\\assets\\images\\hero.jpg",

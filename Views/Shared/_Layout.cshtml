@@ -52,6 +52,18 @@
                         </ul>
                     </li>
                     <li><a href="#">Contact</a></li>
+                    <li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <p>@User.Identity.Name</p>
+                            <a asp-action="LogOut" asp-controller="Account">Log Out</a>
+                        }
+                        else
+                        {
+                            <a asp-action="Login" asp-controller="Account">Log In</a>
+
+                        }
+                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>

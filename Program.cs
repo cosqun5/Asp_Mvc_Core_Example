@@ -1,4 +1,5 @@
 using Bilet1.DAL;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -12,15 +13,19 @@ namespace Bilet1
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddIdentity<IdentityUser,IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
+            builder.Services.Configure<IdentityOptions>(opt =>
+                {
+                    opt.Password.RequireNonAlphanumeric = true;
+                });
+
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
-
-
                 options.UseSqlServer(builder.Configuration["ConnectionStrings:Default"]);
 
-
-
-                });
+            });
 
 
             var app = builder.Build();
@@ -38,6 +43,7 @@ namespace Bilet1
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {

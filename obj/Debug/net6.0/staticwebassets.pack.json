@@ -7037,10 +7037,6 @@
       "PackagePath": "staticwebassets\\assets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Bilet1\\wwwroot\\assets\\images\\12dedccc-cb18-48ba-be0e-7f9c587fe390IMG-20230429-WA0033.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\12dedccc-cb18-48ba-be0e-7f9c587fe390IMG-20230429-WA0033.jpg"
-    },
-    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Bilet1\\wwwroot\\assets\\images\\2f8dcb2f-cab1-45bb-b814-bdac981f3ccbIMG-20230429-WA0033.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\2f8dcb2f-cab1-45bb-b814-bdac981f3ccbIMG-20230429-WA0033.jpg"
     },
@@ -7055,6 +7051,10 @@
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Bilet1\\wwwroot\\assets\\images\\blog3.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\blog3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Bilet1\\wwwroot\\assets\\images\\f6f3fcb9-c89c-4d08-87a9-6a3cc38ecbe0IMG-20230429-WA0033.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\f6f3fcb9-c89c-4d08-87a9-6a3cc38ecbe0IMG-20230429-WA0033.jpg"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Bilet1\\wwwroot\\assets\\images\\hero.jpg",

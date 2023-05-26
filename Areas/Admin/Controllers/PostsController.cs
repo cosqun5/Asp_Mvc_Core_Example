@@ -3,6 +3,7 @@ using Bilet1.DAL;
 using Bilet1.Models;
 using Bilet1.Utilities.Constans;
 using Bilet1.Utilities.Extensions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Bilet1.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="Admin")]
     public class PostsController : Controller
     {
         private readonly AppDbContext _context;
@@ -19,6 +21,7 @@ namespace Bilet1.Areas.Admin.Controllers
             _context = context;
             _webHostEnviroment = webHostEnvironment;
         }
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Posts.Where(p => !p.IsDeleted).ToListAsync());
